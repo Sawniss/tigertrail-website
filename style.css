@@ -295,6 +295,62 @@ h6 {
 }
 
 /* Contact Form Section */
+.contact-form .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#contact-form-style {
+  background-color: #e4e4e4;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* Flexbox to make form and map side by side */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* Ensures responsiveness */
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Styling for Contact Form */
+.contact-content form {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Styling for Google Map */
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+}
+
+/* Ensure iframe takes full container size */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design: Stack on smaller screens */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    /* Stacks form and map vertically */
+  }
+
+  .map-container {
+    height: 300px;
+    /* Adjust height on smaller screens */
+  }
+}
+
+
 .contact-form {
   padding: 50px 0;
   background-color: #f9f9f9;
