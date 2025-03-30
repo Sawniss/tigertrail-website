@@ -463,9 +463,12 @@ footer .social-links a {
 
   .about-content {
     flex-direction: column;
-    text-align: center;
   }
 
+  .container {
+    width: 100%;
+    margin: 0px 10px;
+  }
 
   .activity-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -473,12 +476,13 @@ footer .social-links a {
 
   .form-grid {
     grid-template-columns: 1fr;
+    place-items: center;
   }
 }
 
 @media (max-width: 480px) {
   .activity-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 
   .hero h1 {
