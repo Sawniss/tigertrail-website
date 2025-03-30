@@ -472,6 +472,7 @@ footer .social-links a {
 
   .activity-grid {
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 
   .form-grid {
@@ -482,7 +483,8 @@ footer .social-links a {
 
 @media (max-width: 480px) {
   .activity-grid {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .hero h1 {
