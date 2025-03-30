@@ -9,6 +9,11 @@
   font-style: normal;
 }
 
+p {
+  font-size: 17px;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -188,9 +193,10 @@ h6 {
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
-.about-content img {
+.about-content>#tiger-logo {
   width: 250px;
 }
 
@@ -205,6 +211,22 @@ h6 {
 
 .about-div p {
   margin: 10px 0;
+}
+
+#founder-image {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #678270;
+}
+
+.founder {
+  text-align: center;
+}
+
+.founder #name {
+  font-size: 17px;
+  margin-bottom: -10px;
 }
 
 /* Activities Section */
@@ -245,6 +267,7 @@ h6 {
 .reviews {
   padding: 50px;
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 .review-grid {
@@ -259,6 +282,16 @@ h6 {
   padding: 20px;
   border-radius: 10px;
   max-width: 300px;
+  margin: 10px 0px;
+}
+
+.review>span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.review>p {
+  margin-bottom: 20px;
 }
 
 /* Contact Form Section */
@@ -376,6 +409,7 @@ footer .social-links a {
     flex-direction: column;
     text-align: center;
   }
+
 
   .activity-grid {
     grid-template-columns: repeat(2, 1fr);
